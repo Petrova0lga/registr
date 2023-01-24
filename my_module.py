@@ -31,7 +31,7 @@ def has_special_char(password):
   return any(not c.isalnum() for c in password)
 
 def validate_password(password):
-  if not has_number(password):
+  if not has_number(password):      
     print("No number in password")
     return False
   
@@ -73,4 +73,3 @@ def registration():
 
 
   username = validate_password()
-
